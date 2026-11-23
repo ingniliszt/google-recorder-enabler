@@ -3,7 +3,7 @@ import zipfile, hashlib
 root = Path(__file__).resolve().parent
 out = root / "dist"
 out.mkdir(exist_ok=True)
-files = {n: (root / n).read_bytes() for n in ["module.prop", "customize.sh", "system/etc/sysconfig/recorder_pixel_feature_test.xml"]}
+files = {n: (root / n).read_bytes() for n in ["module.prop", "customize.sh", "system/etc/sysconfig/google_recorder_enabler.xml"]}
 dirs = {str(p) + "/" for n in files for p in Path(n).parents if str(p) != "."}
 version = next(l.split("=", 1)[1] for l in files["module.prop"].decode().splitlines() if l.startswith("version="))
 path = out / f"google-recorder-enabler-v{version}.zip"

@@ -4,7 +4,7 @@ Googleレコーダーの互換性改善を目的として、Androidに `com.goog
 
 ## 仕組みと影響
 
-`system/etc/sysconfig/recorder_pixel_feature_test.xml` をマウントし、機能フラグを1つ追加します。このフラグは端末全体から参照されます。APKの改変や端末モデル名の変更は行いません。本モジュールには通信処理や起動時スクリプトはありません。
+`system/etc/sysconfig/google_recorder_enabler.xml` をマウントし、機能フラグを1つ追加します。このフラグは端末全体から参照されます。APKの改変や端末モデル名の変更は行いません。本モジュールには通信処理や起動時スクリプトはありません。
 
 ## 必要環境
 
@@ -28,7 +28,7 @@ OnePlus 13 / Android 16 / SukiSU Ultra（マウント用メタモジュールに
 リカバリーからのインストールには対応していません。
 
 ```sh
-su -c 'cat /system/etc/sysconfig/recorder_pixel_feature_test.xml'
+su -c 'cat /system/etc/sysconfig/google_recorder_enabler.xml'
 su -c '/system/bin/pm list features' | grep -Fx 'feature:com.google.android.feature.PIXEL_2017_EXPERIENCE'
 ```
 
