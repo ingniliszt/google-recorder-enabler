@@ -59,3 +59,7 @@ su -c '/system/bin/pm list features' | grep -Fx 'feature:com.google.android.feat
 ## ライセンス
 
 NYSL Version 0.9982（煮るなり焼くなり好きにしろライセンス）です。詳細は `LICENSE` を参照してください。Googleとの提携・承認を示すものではありません。
+
+---
+
+<sub>Published with the help of Muse — このリポジトリの整備と公開作業には Muse を利用しました。</sub>
