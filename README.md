@@ -25,7 +25,7 @@ OnePlus 13 / Android 16 / SukiSU Ultra（マウント用メタモジュールに
 4. 下記コマンドで反映を確認します。
 5. Googleレコーダー本体は別途用意してください。
 
-既存のRecorder Pixel Feature Testから更新する場合も同じ手順です。内部IDを維持しているため、同じモジュールとして更新されます。リカバリーからのインストールには対応していません。
+リカバリーからのインストールには対応していません。
 
 ```sh
 su -c 'cat /system/etc/sysconfig/recorder_pixel_feature_test.xml'
