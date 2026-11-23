@@ -1,5 +1,5 @@
 ui_print " "
-ui_print "=== Google Recorder Enabler v1.1 ==="
+ui_print "=== Google Recorder Enabler ==="
 ui_print " "
 ui_print "Googleレコーダーの互換性検証用モジュールです。"
 ui_print "追加: com.google.android.feature.PIXEL_2017_EXPERIENCE"

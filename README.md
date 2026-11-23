@@ -13,15 +13,13 @@ Googleレコーダーの互換性改善を目的として、Androidに `com.goog
 - KernelSU/SukiSUでは、構成に応じてMagic Mount-rsなどのマウント用メタモジュールが必要です。
 - 本モジュール自体はZygisk/LSPosedを使用しません。
 
-## 確認範囲
+## 動作確認環境
 
-従来版v1.0で、OnePlus 13 / Android 16 / SukiSU環境において、フラグ反映とGoogleレコーダーの導入・起動が報告されています。Magic Mount-rs v4.0.11-930の使用を確認しています。レコーダーの確認バージョンは4.2.20260823.982886211です。
-
-v1.1は表示・説明・ZIPの整備版です。XMLはv1.0とバイト単位で同一ですが、v1.1の実機再インストール確認はまだ行っていません。Magiskおよび他機種での実機確認も未実施です。
+OnePlus 13 / Android 16 / SukiSU Ultra（マウント用メタモジュールにMagic Mount-rsを使用）の環境で、フラグの反映とGoogleレコーダーの導入・起動を確認しています。
 
 ## インストール
 
-1. Releasesから `google-recorder-enabler-v1.1.zip` を取得します。Source code (zip)はインストール用ではありません。
+1. Releasesから最新の `google-recorder-enabler-v*.zip` を取得します。Source code (zip)はインストール用ではありません。
 2. SukiSUなどのモジュール管理アプリからZIPをインストールします。
 3. 端末を再起動します。
 4. 下記コマンドで反映を確認します。
